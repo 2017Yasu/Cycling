@@ -18,16 +18,16 @@
 | :--------- | :----- |
 | UserId (p) | string |
 | Name       | string |
-| Team       | Team   |
+| TeamId     | string |
 | Email      | Email  |
 
 ### Teams
 
-| Name       | Type    |
-| :--------- | :------ |
-| TeamId (p) | string  |
-| Name       | string  |
-| Leader     | Cyclist |
+| Name       | Type   |
+| :--------- | :----- |
+| TeamId (p) | string |
+| Name       | string |
+| LeaderId   | string |
 
 ## Command history
 
