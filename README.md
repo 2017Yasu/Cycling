@@ -4,13 +4,14 @@
 
 ### CycleResults
 
-| Name     | Type     |
-| :------- | :------- |
-| Date     | date     |
-| Duration | Duration |
-| Distance | float    |
-| Average  | float    |
-| Max      | float    |
+| Name      | Type     |
+| :-------- | :------- |
+| Date      | date     |
+| CyclistId | Cyclist  |
+| Duration  | Duration |
+| Distance  | float    |
+| Average   | float    |
+| Max       | float    |
 
 ### Cyclists
 
@@ -33,3 +34,7 @@
 
     django-admin startproject Cycling
     python manage.py startapp CRec
+    python manage.py migrate
+    python manage.py makemigrations CRec
+    python manage.py sqlmigrate CRec 0001
+    python manage.py migrate
