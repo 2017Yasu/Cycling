@@ -23,7 +23,7 @@ class Cyclist(models.Model):
 
 class CycleResults(models.Model):
     date = models.DateField()
-    cyclist_id = models.ForeignKey(Cyclist, on_delete=models.CASCADE)
+    cyclist = models.ForeignKey(Cyclist, on_delete=models.CASCADE)
     duration = models.DurationField()
     distance = models.FloatField()
     average = models.FloatField(blank=True, null=False)

@@ -38,3 +38,4 @@
     python manage.py makemigrations CRec
     python manage.py sqlmigrate CRec 0001
     python manage.py migrate
+    python manage.py createsuperuser
