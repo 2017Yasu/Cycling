@@ -32,4 +32,4 @@
 ## Command history
 
     django-admin startproject Cycling
-    python manage.py startapp Cycling
+    python manage.py startapp CRec
