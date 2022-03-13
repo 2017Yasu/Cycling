@@ -1,5 +1,7 @@
 from django.db import models
 
+from encrypted_model_fields.fields import EncryptedCharField
+
 # Create your models here.
 
 class Team(models.Model):
@@ -16,6 +18,7 @@ class Cyclist(models.Model):
     name = models.CharField(verbose_name="cyclist_name", max_length=32)
     team_id = models.CharField(max_length=16, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
+    password = EncryptedCharField(max_length=64)
 
     @property
     def team(self):
